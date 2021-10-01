@@ -2,4 +2,7 @@ function square(x) {
   return x * x;
 }
 
-module.exports = { square };
+function cube(x) {
+    return Math.pow(x, 3)
+}
+module.exports = { square , cube};
