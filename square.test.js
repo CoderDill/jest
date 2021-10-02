@@ -17,4 +17,4 @@ describe('cube function', function () {
         const num2 = cube(2);
         expect(num2).toEqual(8);
     })
-}) 
+})
