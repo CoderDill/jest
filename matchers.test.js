@@ -25,4 +25,10 @@ describe("test matchers", function () {
     expect(randNum).toEqual(expect.any(Number));
     expect("crappydill").toEqual(expect.any(String));
   });
+
+  test("not", function () {
+    const numLives = 9;
+    expect(2).not.toEqual(3);
+    expect(numLives).not.toEqual(0);
+  });
 });
