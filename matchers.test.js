@@ -1,6 +1,23 @@
 describe("test matchers", function () {
+  let nums;
+
+  beforeEach(function () {
+    nums = [2, 3, 4];
+  });
+
+  afterEach(function () {
+    console.log("After Each Test");
+  });
+
+  beforeAll(function () {
+    console.log("Before All");
+  });
+
+  afterAll(function () {
+    console.log("After All");
+  });
+
   test("compare toBe and toEqual", function () {
-    const nums = [2, 3, 4];
     const copy = [...nums];
     const nums2 = nums;
 
