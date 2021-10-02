@@ -30,5 +30,6 @@ describe("test matchers", function () {
     const numLives = 9;
     expect(2).not.toEqual(3);
     expect(numLives).not.toEqual(0);
+    expect(numLives).not.toEqual(expect.any(String));
   });
 });
